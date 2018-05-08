@@ -4,6 +4,7 @@
   left: 0;
   right: 0;
   z-index: 9;
+  background: #303030;
 }
 .bee-header .container {
   width: 1000px;
@@ -29,7 +30,6 @@
 }
 .bee-header .container .list ul li a {
   color: #fff;
-  font-family: 'PingFangSC-Regular', "Microsoft YaHei";
   font-size: 16px;
   text-decoration: none;
   padding-bottom: 4px;
@@ -51,8 +51,7 @@
   border-bottom: 2px solid #FFA700;
 }
 .bee-footer {
-  font-family: 'PingFangSC-Regular', "Microsoft YaHei";
-  height: 280px;
+  height: 260px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -67,16 +66,17 @@
   margin-right: auto;
   height: 250px;
   position: relative;
-  top: 15px;
+  top: 5px;
 }
 .bee-footer .container .top {
   height: 210px;
+  padding-top: 10px;
 }
 .bee-footer .container .top h3 {
   font-size: 14px;
   color: #fff;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .bee-footer .container .top .float {
   float: left;
@@ -88,7 +88,14 @@
   float: left;
   line-height: 36px;
   font-size: 12px;
+}
+.bee-footer .container .top .first li a {
   color: #999;
+  cursor: pointer;
+  text-decoration: none;
+}
+.bee-footer .container .top .first li a:hover {
+  color: #fff;
 }
 .bee-footer .container .top .second {
   color: #fff;
@@ -167,6 +174,7 @@ body {
   margin: 0;
   color: #fff;
   min-width: 1200px;
+  font-family: 'PingFangSC-Regular', "Microsoft YaHei";
 }
 html ul,
 body ul {
@@ -176,143 +184,56 @@ body ul {
 body {
   display: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: lighter;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
 .app {
-  font-family: 'PingFangSC-Regular', "Microsoft YaHei";
   min-height: 100%;
   position: relative;
-  padding-bottom: 280px;
+  padding-bottom: 260px;
 }
 .app .page {
-  position: relative;
-}
-.app .page .background {
-  width: 100%;
-  height: 500px;
-  background: url(../img/44a5bc7f601f73885a772137591ef2ae.png) center no-repeat;
-  background-size: cover;
-}
-.app .page .background h1 {
-  font-family: 'PingFangSC-Medium', "Microsoft YaHei";
-  text-align: center;
-  margin: 0;
-  font-size: 40px;
-  position: relative;
-  top: 220px;
-}
-.app .page .summary {
-  height: 420px;
-  background: #fff;
-  padding-top: 80px;
-}
-.app .page .summary .background_img {
-  position: relative;
-  width: 44%;
-  float: right;
-  background: url(../img/82db9db61d96e67976162ee08fb07675.png) center no-repeat;
-  background-size: cover;
-  height: 420px;
-}
-.app .page .summary .background_img .title_background {
-  position: absolute;
-  right: 50%;
-  width: 70%;
-  height: 100px;
-  background: rgba(255, 167, 0, 0.55);
-  top: 30px;
-}
-.app .page .summary .background_img .title {
-  position: absolute;
-  left: 30px;
-  top: 50px;
-  font-family: 'PingFangSC-Semibold', "Microsoft YaHei";
-}
-.app .page .summary .text {
-  position: relative;
-  width: 40%;
-  float: right;
-  text-align: left;
-  margin-right: 30px;
-  top: 170px;
-  color: #666;
-  font-size: 24px;
-}
-.app .page .culture {
-  height: 420px;
-  background: #fff;
-  padding-top: 80px;
-}
-.app .page .culture .background_img {
-  position: relative;
-  width: 56%;
-  float: left;
-  background: url(../img/20c8f6d008049ce64a2bc09606e10d5a.png) center no-repeat;
-  background-size: cover;
-  height: 340px;
-}
-.app .page .culture .background_img .title_background {
-  position: absolute;
-  right: 100px;
-  width: 150px;
-  height: 420px;
-  background: rgba(255, 167, 0, 0.55);
-}
-.app .page .culture .background_img .title {
-  position: absolute;
-  right: 100px;
-  top: 150px;
-  width: 150px;
-  text-align: center;
-  font-family: 'PingFangSC-Semibold', "Microsoft YaHei";
-}
-.app .page .culture .text_div {
-  position: relative;
-  float: left;
-  text-align: left;
-  margin-left: 30px;
-  top: 50px;
-  font-size: 24px;
-}
-.app .page .culture .text_div .text_title {
-  color: #333;
-  font-family: 'PingFangSC-Medium', "Microsoft YaHei";
-}
-.app .page .culture .text_div .text {
-  color: #666;
-  margin-bottom: 15px;
-}
-.app .page .history {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-.app .page .history .title1 {
-  font-size: 30px;
-  color: #444;
-  text-align: center;
-}
-.app .page .history .title2 {
-  font-size: 14px;
-  color: #999;
-  text-align: center;
-}
-.app .page .history .year {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  margin-bottom: 100px;
 }
-.app .page .history .year .year_title {
-  font-size: 30px;
-  color: #666;
-  font-family: 'PingFangSC-Medium', "Microsoft YaHei";
-  margin: 30px auto 20px 30px;
+.app .page h1 {
+  font-size: 32px;
+  color: #444;
+  padding-top: 120px;
+  padding-bottom: 20px;
+  font-weight: lighter;
+  margin: 0;
 }
-.app .page .history .year .content_list {
-  background: #F9F9F9;
-  border-left: 3px solid #FFA700;
-  height: 70px;
-  line-height: 70px;
+.app .page h6 {
+  font-size: 20px;
+  color: #999;
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  font-weight: lighter;
+}
+.app .page p {
+  font-size: 20px;
   color: #666;
-  padding-left: 27px;
-  margin-bottom: 8px;
+  text-indent: 2em;
+  margin: 0;
 }
 
-/*# sourceMappingURL=about.9509d69def9fd899056b.css.map*/
+/*# sourceMappingURL=newsDetail.9401c15822c550448790.css.map*/

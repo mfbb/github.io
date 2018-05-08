@@ -23493,9 +23493,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
             }
         },
         afterRender: function afterRender() {
-            (0, _jquery2.default)('.part1').find('.down').bind('click', function () {
-                _jquery2.default.fn.fullpage.moveSectionDown();
-            });
+            // $('.part1').find('.down').bind('click', function () {
+            //     $.fn.fullpage.moveSectionDown()
+            // });
             (0, _jquery2.default)('.part1').find('.video').html('<video id="mediaElementID" src="http://image.yscredit.com/www/index_video.mp4" width= 100%; height=100%; style="object-fit: cover" autoplay loop>您的浏览器不支持 video 标签。</video>');
             document.getElementById('mediaElementID').currentTime = 1; //设定在 1seconds
         }
@@ -23523,7 +23523,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         $modal_rule_win.css({ 'display': 'flex' });
     });
     (0, _jquery2.default)('.close_btn').click(function () {
-        (0, _jquery2.default)('.modal_rule_win').css({ 'display': 'none' });
+        var $modal_rule_win = (0, _jquery2.default)('.modal_rule_win');
+        $modal_rule_win.find('.rule_content').html('');
+        $modal_rule_win.css({ 'display': 'none' });
     });
 }); // home.js
 // const greeter = require('./util.js');
@@ -23796,4 +23798,4 @@ var _temp = function () {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=home.9509d69def9fd899056b.js.map
+//# sourceMappingURL=home.9401c15822c550448790.js.map

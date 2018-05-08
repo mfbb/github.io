@@ -18653,7 +18653,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         $modal_rule_win.css({ 'display': 'flex' });
     });
     (0, _jquery2.default)('.close_btn').click(function () {
-        (0, _jquery2.default)('.modal_rule_win').css({ 'display': 'none' });
+        var $modal_rule_win = (0, _jquery2.default)('.modal_rule_win');
+        $modal_rule_win.find('.rule_content').html('');
+        $modal_rule_win.css({ 'display': 'none' });
     });
 }); // home.js
 // const greeter = require('./util.js');
@@ -18678,4 +18680,4 @@ var _temp = function () {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=news.9509d69def9fd899056b.js.map
+//# sourceMappingURL=news.9401c15822c550448790.js.map
