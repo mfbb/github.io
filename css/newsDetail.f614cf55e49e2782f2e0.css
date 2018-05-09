@@ -4,6 +4,7 @@
   left: 0;
   right: 0;
   z-index: 9;
+  background: #303030;
 }
 .bee-header .container {
   width: 1000px;
@@ -205,178 +206,46 @@ h6 {
   padding-bottom: 260px;
 }
 .app .page {
-  position: relative;
-}
-.app .page .background {
-  width: 100%;
-  height: 500px;
-  background: url(../img/d6b71713bdc6a436872ec777b5f3e1e3.png) center no-repeat;
-  background-size: cover;
-}
-.app .page .background h1 {
-  text-align: center;
-  margin: 0;
-  font-size: 40px;
-  position: relative;
-  top: 220px;
-}
-.app .page .team {
-  margin-top: 60px;
-  margin-bottom: 50px;
-}
-.app .page .team .title1 {
-  font-size: 30px;
-  color: #444;
-  text-align: center;
-}
-.app .page .team .title2 {
-  font-size: 14px;
-  color: #999;
-  text-align: center;
-}
-.app .page .team ul {
-  width: 1200px;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
-}
-.app .page .team ul li {
-  width: 400px;
-  float: left;
-  margin-bottom: 40px;
-  height: 257px;
-}
-.app .page .team ul li img {
-  float: left;
-}
-.app .page .team ul li .info {
-  float: left;
-  padding-left: 12px;
-  max-width: 219px;
-}
-.app .page .team ul li h4 {
-  color: #444;
-  font-size: 21px;
-  margin: 0;
-  line-height: 40px;
-}
-.app .page .team ul li h5 {
-  color: #666;
-  font-size: 16px;
-  margin: 0;
-  padding-bottom: 20px;
-}
-.app .page .team ul li p {
-  color: #999;
-  font-size: 16px;
-  margin: 0;
-}
-.app .page .university {
+  position: relative;
   margin-bottom: 100px;
 }
-.app .page .university .title1 {
-  font-size: 30px;
+.app .page h1 {
+  font-size: 32px;
   color: #444;
-  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 20px;
+  font-weight: lighter;
+  margin: 0;
 }
-.app .page .university .title2 {
-  font-size: 14px;
-  color: #999;
-  text-align: center;
-}
-.app .page .university .first-msg {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  background: url(../img/a3b53e80d699b011ea32c35dd12900ec.png) center no-repeat;
-  height: 484px;
-  margin-top: 30px;
-  position: relative;
-}
-.app .page .university .first-msg .first-title {
-  color: #fff;
+.app .page h6 {
   font-size: 20px;
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
-  z-index: 3;
-}
-.app .page .university .first-msg .first-date {
-  color: #fff;
-  font-size: 14px;
-  position: absolute;
-  right: 30px;
-  bottom: 20px;
-  z-index: 3;
-}
-.app .page .university .first-msg::before {
-  content: '';
-  display: block;
-  height: 40px;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0px -10px 10px -5px rgba(0, 0, 0, 0.5);
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.app .page .university ul {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.app .page .university ul li {
-  height: 200px;
-  width: 100%;
-  border-top: 1px solid #e6e6e6;
-}
-.app .page .university ul li img {
-  padding-top: 27px;
-  float: left;
-}
-.app .page .university ul li .msg-div {
-  width: 750px;
-  float: left;
-  margin-left: 50px;
+  color: #999;
+  display: inline-block;
+  margin: 0;
+  padding-bottom: 50px;
   padding-right: 50px;
+  font-weight: lighter;
 }
-.app .page .university ul li h3 {
+.app .page p {
   font-size: 20px;
-  color: #444;
-  padding-top: 30px;
-}
-.app .page .university ul li p {
-  height: 57px;
-  font-size: 14px;
   color: #666;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  text-indent: 2em;
+  margin: 0;
 }
-.app .page .university ul li .msg-date {
-  width: 150px;
-  float: left;
-  height: 100px;
-  margin-top: 50px;
-  border-left: 1px solid #e6e6e6;
-}
-.app .page .university ul li .msg-date .dd {
-  font-size: 54px;
-  color: #666;
-  display: block;
-  text-align: center;
-}
-.app .page .university ul li .msg-date .yy-mm {
-  font-size: 14px;
-  color: #999;
-  display: block;
-  text-align: center;
-}
-.app .page .university ul li:first-of-type {
-  border-top: 0;
+@media screen and (max-height: 800px) {
+  .app .page h1 {
+    font-size: 28px;
+  }
+  .app .page h6 {
+    font-size: 18px;
+  }
+  .app .page p {
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
 
-/*# sourceMappingURL=team.e0411b092791e2bf7a2b.css.map*/
+/*# sourceMappingURL=newsDetail.f614cf55e49e2782f2e0.css.map*/

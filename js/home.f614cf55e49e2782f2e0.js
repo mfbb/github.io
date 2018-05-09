@@ -21434,7 +21434,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     (0, _jquery2.default)('#fullpage').fullpage({
         navigation: true,
         navigationPosition: 'right',
-        slidesColor: ['#fff', '#fff', '#fff', '#F9F9F9', '#fff'],
+        sectionsColor: ['#fff', '#fff', '#fff', '#F9F9F9', '#fff'],
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
         afterLoad: function afterLoad(anchorLink, index) {
             var $header = (0, _jquery2.default)('.bee-header');
@@ -21501,4 +21501,4 @@ var _temp = function () {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=home.e0411b092791e2bf7a2b.js.map
+//# sourceMappingURL=home.f614cf55e49e2782f2e0.js.map
