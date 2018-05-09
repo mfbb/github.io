@@ -173,7 +173,6 @@ body {
   margin: 0;
   color: #fff;
   min-width: 1200px;
-  min-height: 100%;
   font-family: 'PingFangSC-Regular', "Microsoft YaHei";
 }
 html ul,
@@ -192,109 +191,192 @@ h5,
 h6 {
   font-weight: lighter;
 }
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
 .app {
-  height: 100%;
-  background: #ddd;
+  min-height: 100%;
   position: relative;
   padding-bottom: 260px;
-  box-sizing: content-box;
 }
 .app .page {
   position: relative;
-  height: 100%;
+}
+.app .page .background {
   width: 100%;
-  background: url(../img/b90f50fe02151f003c294d013726a831.png) bottom right no-repeat;
+  height: 500px;
+  background: url(../img/d6b71713bdc6a436872ec777b5f3e1e3.png) center no-repeat;
   background-size: cover;
 }
-.app .page .container {
-  width: 1000px;
+.app .page .background h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 40px;
+  position: relative;
+  top: 220px;
+}
+.app .page .team {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.app .page .team .title1 {
+  font-size: 30px;
+  color: #444;
+  text-align: center;
+}
+.app .page .team .title2 {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+}
+.app .page .team ul {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  top: 156px;
-  height: calc(100% - 256px);
+  margin-top: 50px;
 }
-.app .page .container .left {
+.app .page .team ul li {
   width: 400px;
-  height: 100%;
   float: left;
-  text-align: left;
-  background: url(../img/e165777273ced9338909d8fc2c90ae43.png) center no-repeat;
-  background-size: contain;
+  margin-bottom: 40px;
+  height: 257px;
 }
-.app .page .container .right {
-  padding-left: 100px;
+.app .page .team ul li img {
   float: left;
-  height: 100%;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
-.app .page .container .right .title1 {
-  font-size: 64px;
+.app .page .team ul li .info {
+  float: left;
+  padding-left: 12px;
+  max-width: 219px;
 }
-.app .page .container .right .title2 {
-  font-size: 24px;
-  padding-bottom: 80px;
-  letter-spacing: 8px;
+.app .page .team ul li h4 {
+  color: #444;
+  font-size: 21px;
+  margin: 0;
+  line-height: 40px;
 }
-.app .page .container .right button {
-  width: 192px;
-  height: 60px;
-  outline: none;
-  border-radius: 54px;
-  font-size: 20px;
-  text-align: right;
-  padding-right: 30px;
-  line-height: 58px;
-  color: #fff;
-  cursor: pointer;
-  border: 1px solid #666;
-  margin-bottom: 30px;
+.app .page .team ul li h5 {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 20px;
 }
-.app .page .container .right .ios {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAgCAYAAAF2sijUAAAAAXNSR0IArs4c6QAAAs9JREFUSA21ljtoFUEUhncv5oUkGvBBCEYCWsQq2ESw0sZeQTsFC99dKlvBys7iYiWIYFCQgIJp1MbGwiDYKGgkPlAL9UZNNEbj+v3jnWHu3Vl2N2YP/DtnzvnPOTNnd3Y3ikKSJMlbsA90RE2FIUlEjnWxE+lOMJ41E5Rh0Ih9Ws3xQorPzK4QRRPK2UeGL4EsG2pxHH/FsTfgPJqykWkkZZQBx7i/IEPCcBHcaRKeod+UrgUtM6b2x1piGVMObLPARJqWauKLjbzqG61OuenMDinSEjNHMjwFkoM+aY0/adch/8L2A3RRZMn32+WswzjnO3L0bepdP6TPOUTntvtTT0edNV/Rso3YpQb7bkmBcdS1VW0LELJM3e72N9d+0mNOoO8Hdc9WFw/56dmyVRZzIdsb8BAwoi1IAu5s078Qcx3PZrV5oA81A8+3uczUNQfSGHgEXoIzNOA1DD2SA8wbYAYcakmC4S4oKkpoDveeohFNXqcNfFci8JgJ4qKHvEyre9n7vIJdc2ymnHHA+hX4xk4KjFOOw0pPl9ijqPdAbaXHqsfu8ZJbQr7ykAYt+udRp7s7L44gE2MrRsx7CLIfko/oJ8ARMAskeq/nJjbMIhcaNQgugwUgOVckrjSHxH1gWhU8eY++sXSyvACSdoLHXiGp10BHXmzeF0f3qhf85l4teMn0A/AAXAGT+F5RrAt9MyND1Gjjy5YWyGpTHSyBLJnDMQW0oxdZJM9+H317qhpG3fiq5BaJB11RJtcrqqT/nvWukBQMO8FyBQXnyTncUoyJHgpt1R3kdsJ/zD8RqxdBi6jQDGj552lhrHwyRKjeOGlh67craKlNOYmy1lY1L0YMWzE8ATpfVck3Eo+55BTVw7MIqpLDrphVqLQJPF/lit/Jt8vWCI4QjoM/q1BYL5PiJwDyDqCb/gGcAltCK8TeDw4AfddvgN0hnmx/Ab+eBcCFvlltAAAAAElFTkSuQmCC) 30px center no-repeat #050505;
-  margin-right: 10px;
+.app .page .team ul li p {
+  color: #999;
+  font-size: 16px;
+  margin: 0;
 }
-.app .page .container .right .ios:hover {
-  background-color: #FFA700;
+.app .page .university {
+  margin-bottom: 100px;
 }
-.app .page .container .right .android {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAgCAYAAAF2sijUAAAAAXNSR0IArs4c6QAAAwtJREFUSA3FlztoVEEUhnc1ggo+kI0PDIqNErQIRowKQbAICvEBairtbBUrbSWIBhW0srG0sBTxAb6C2MROYuOihQqCjSASXzGa9ftn51zm3t3Zu7tZ8MA/58w55z8zd+7cmd1CAalUKlukE8HxU3AOjO0gEXM6R0IxoyiDUMI9b0SLVCzVaaLjloHuNucAnQtBIDHnkfEWPHGZsYb0neCKaLEcTXNpTRDnF7EkFtSYyp5GLQS/BPoD6EJXmCmHl278M45pnoyejQW1UpMumRJTKh9IX6qKAnKYlu0WWkYoJOyhvxWsAbdBb7FYvIGuLxDGVBUZqirXlmkfygpZ9mrv4DwKboJUQpiMfRUcBo80b9tcyUZR9YgMe/90bOkyA+V0I6OE7pFoCbL6fOZFJRkrSrAAiUt88m5P1Et+YfGoJmlxNoivN+vryjronyDxFfoA+AjKvPwH6LhA6AFZ0cdxL84i4hnP0ZMB23bR2ZCc7FUShwhoB0WFKS+yoL46Pcs2oOk0IhbJFfEWBQ7Z9DSzfWpy5LqPb251y80yoqTSKrFKo50T8TUFNIX5Sbm48dSHPiQpPPSRnIVJfeDhVHU6N5JvjYLJ61ESM7A7oD9LCkfMxtRf4J06rxsLo0yAKWWhB4Gk9mpoXMaR90I82UTeGfIG8/LyHlH8Z2A5xX6AmGjB/4DcEyY6IJU1iAroYtevhR4wDrIygWM9UM5vOI9BzamVJaX6EFaBz6BdeQ9xWaqo79Q7GhX6DnSUpDa1Ak2KzrGZurnMZB34GjzKcez9Qb9d8yDEUwH5E3ZJ73A1CLfvJvraAHOVvxTYGBRZgb0yummCxI6a/2XAdjdGq0+uh6veHLzMDeA00M2ooyn3SCYnT/T7TLW0AbV51qrvPgtux3fY1+Tw0omldhcQte9aUenk3g+dspmRfuFqx2qnjQKT+xj6ZSk5BoadVW3OocrgDQO9rLpabBl4BwjlspXAeSkMYO+yWEw3s3T6nkKxnwzyhbb6nfh+3fKWmP0ISP+RYAT5fKykEfPkHzurxAwgjE1gAAAAAElFTkSuQmCC) 30px center no-repeat #050505;
-}
-.app .page .container .right .android:hover {
-  background-color: #FFA700;
-}
-.app .page .container .right .text {
-  width: 170px;
+.app .page .university .title1 {
+  font-size: 30px;
+  color: #444;
   text-align: center;
-  font-size: 18px;
-  line-height: 25px;
 }
-@media screen and (max-device-width: 800px) {
-  .app .page {
-    position: fixed;
-  }
-  .bee-footer {
-    position: fixed;
-  }
+.app .page .university .title2 {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
 }
-@media screen and (max-height: 800px) {
-  .app .page .container .right .title1 {
-    font-size: 54px;
-    padding-top: 10px;
-  }
-  .app .page .container .right .title2 {
-    font-size: 22px;
-    letter-spacing: 5px;
-  }
-  .app .page .container .right img {
-    width: 140px;
-  }
-  .app .page .container .right .text {
-    width: 140px;
-  }
+.app .page .university .first-msg {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../img/a3b53e80d699b011ea32c35dd12900ec.png) center no-repeat;
+  height: 484px;
+  margin-top: 30px;
+  position: relative;
+}
+.app .page .university .first-msg .first-title {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  z-index: 3;
+}
+.app .page .university .first-msg .first-date {
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  z-index: 3;
+}
+.app .page .university .first-msg::before {
+  content: '';
+  display: block;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -10px 10px -5px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.app .page .university ul {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.app .page .university ul li {
+  height: 200px;
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+}
+.app .page .university ul li img {
+  padding-top: 27px;
+  float: left;
+}
+.app .page .university ul li .msg-div {
+  width: 750px;
+  float: left;
+  margin-left: 50px;
+  padding-right: 50px;
+}
+.app .page .university ul li h3 {
+  font-size: 20px;
+  color: #444;
+  padding-top: 30px;
+}
+.app .page .university ul li p {
+  height: 57px;
+  font-size: 14px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.app .page .university ul li .msg-date {
+  width: 150px;
+  float: left;
+  height: 100px;
+  margin-top: 50px;
+  border-left: 1px solid #e6e6e6;
+}
+.app .page .university ul li .msg-date .dd {
+  font-size: 54px;
+  color: #666;
+  display: block;
+  text-align: center;
+}
+.app .page .university ul li .msg-date .yy-mm {
+  font-size: 14px;
+  color: #999;
+  display: block;
+  text-align: center;
+}
+.app .page .university ul li:first-of-type {
+  border-top: 0;
 }
 
-/*# sourceMappingURL=download.9401c15822c550448790.css.map*/
+/*# sourceMappingURL=team.e0411b092791e2bf7a2b.css.map*/

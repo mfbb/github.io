@@ -60,12 +60,11 @@
 /******/ 	__webpack_require__.p = "../";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 77);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 1:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10436,8 +10435,7 @@ return jQuery;
 
 
 /***/ }),
-
-/***/ 37:
+/* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10536,14 +10534,14 @@ var win = w;
 
 
 /***/ }),
-
-/***/ 70:
+/* 2 */,
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_dom7_dist_dom7_modular__ = __webpack_require__(71);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ssr_window__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_dom7_dist_dom7_modular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ssr_window__ = __webpack_require__(1);
 /**
  * Swiper 4.2.6
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -17169,8 +17167,7 @@ Swiper.use(components);
 
 
 /***/ }),
-
-/***/ 71:
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17261,7 +17258,7 @@ Swiper.use(components);
 /* unused harmony export touchmove */
 /* unused harmony export resize */
 /* unused harmony export scroll */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ssr_window__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ssr_window__ = __webpack_require__(1);
 /**
  * Dom7 2.0.5
  * Minimalistic JavaScript library for DOM manipulation, with a jQuery-compatible API
@@ -18604,20 +18601,24 @@ function scroll(...args) {
 
 
 /***/ }),
-
-/***/ 77:
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(78);
+__webpack_require__(11);
 
-var _swiper = __webpack_require__(70);
+var _swiper = __webpack_require__(3);
 
 var _swiper2 = _interopRequireDefault(_swiper);
 
-var _jquery = __webpack_require__(1);
+var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
@@ -18671,13 +18672,11 @@ var _temp = function () {
 ;
 
 /***/ }),
-
-/***/ 78:
+/* 11 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
-
-/******/ });
-//# sourceMappingURL=news.9401c15822c550448790.js.map
+/******/ ]);
+//# sourceMappingURL=news.e0411b092791e2bf7a2b.js.map
