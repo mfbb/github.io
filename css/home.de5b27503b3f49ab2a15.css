@@ -888,6 +888,9 @@ html.fp-enabled,
   cursor: pointer;
   outline: none;
 }
+.bee-header .container .list ul li a:hover {
+  color: #FFA700;
+}
 .bee-header .container .list ul li a.active {
   color: #FFA700;
   border-bottom: 2px solid #FFA700;
@@ -897,6 +900,9 @@ html.fp-enabled,
 }
 .bee-header.black .container .list ul li a {
   color: #444;
+}
+.bee-header.black .container .list ul li a:hover {
+  color: #FFA700;
 }
 .bee-header.black .container .list ul li a.active {
   color: #FFA700;
@@ -2004,4 +2010,4 @@ html.fp-enabled,
   }
 }
 
-/*# sourceMappingURL=home.d340b115d8bdc8080ab4.css.map*/
+/*# sourceMappingURL=home.de5b27503b3f49ab2a15.css.map*/

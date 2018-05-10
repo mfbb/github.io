@@ -18658,6 +18658,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         $modal_rule_win.find('.rule_content').html('');
         $modal_rule_win.css({ 'display': 'none' });
     });
+    (0, _jquery2.default)(window).scroll(function () {
+        var $header = (0, _jquery2.default)('.bee-header');
+        var $goToTop = (0, _jquery2.default)('.goToTop');
+        if ((0, _jquery2.default)(this).scrollTop() >= 500) {
+            if (!$header.hasClass('black')) {
+                $header.addClass('black');
+            }
+            $goToTop.show();
+        } else {
+            if ($header.hasClass('black')) {
+                $header.removeClass('black');
+            }
+            $goToTop.hide();
+        }
+    });
+    (0, _jquery2.default)('.goToTop').on('click', function () {
+        (0, _jquery2.default)("html,body").animate({ scrollTop: 0 });
+    });
 }); // home.js
 // const greeter = require('./util.js');
 // document.querySelector("#root").appendChild(greeter());
@@ -18679,4 +18697,4 @@ var _temp = function () {
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=news.d340b115d8bdc8080ab4.js.map
+//# sourceMappingURL=news.de5b27503b3f49ab2a15.js.map
