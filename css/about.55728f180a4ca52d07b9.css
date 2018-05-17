@@ -201,14 +201,6 @@ h5,
 h6 {
   font-weight: lighter;
 }
-.clearfix::after {
-  content: "";
-  display: block;
-  height: 0;
-  line-height: 0;
-  clear: both;
-  visibility: hidden;
-}
 .app {
   min-height: 100%;
   position: relative;
@@ -220,7 +212,7 @@ h6 {
 .app .page .background {
   width: 100%;
   height: 500px;
-  background: url(../img/f6a456a274c8bf23812c1ade5565b29d.jpg) center no-repeat;
+  background: url(../img/a601092ee8b0b596a7ad0b0f2ed6e552.jpg) center no-repeat;
   background-size: cover;
 }
 .app .page .background h1 {
@@ -230,174 +222,153 @@ h6 {
   position: relative;
   top: 220px;
 }
-.app .page .team {
-  margin-top: 60px;
-  margin-bottom: 50px;
+.app .page .summary {
+  height: 420px;
+  background: #fff;
+  padding-top: 80px;
 }
-.app .page .team .title1 {
+.app .page .summary .background_img {
+  position: relative;
+  width: 44%;
+  float: right;
+  background: url(../img/f37e1db6971baa358bef22a734a177d3.jpg) center no-repeat;
+  background-size: cover;
+  height: 420px;
+}
+.app .page .summary .background_img .title_background {
+  position: absolute;
+  right: 50%;
+  width: 70%;
+  height: 100px;
+  background: rgba(255, 167, 0, 0.55);
+  top: 30px;
+}
+.app .page .summary .background_img .title {
+  position: absolute;
+  left: 30px;
+  top: 50px;
+}
+.app .page .summary .background_img .title .summary-title1 {
   font-size: 30px;
-  color: #444;
-  text-align: center;
 }
-.app .page .team .title2 {
+.app .page .summary .background_img .title .summary-title2 {
   font-size: 14px;
-  color: #999;
+}
+.app .page .summary .text {
+  position: relative;
+  width: 40%;
+  float: right;
+  text-align: left;
+  margin-right: 30px;
+  top: 170px;
+  color: #666;
+  font-size: 24px;
+}
+.app .page .culture {
+  height: 420px;
+  background: #fff;
+  padding-top: 80px;
+}
+.app .page .culture .background_img {
+  position: relative;
+  width: 56%;
+  float: left;
+  background: url(../img/2ffdf530c07301ba66ebcf5bcabbcfa3.jpg) center no-repeat;
+  background-size: cover;
+  height: 340px;
+}
+.app .page .culture .background_img .title_background {
+  position: absolute;
+  right: 100px;
+  width: 150px;
+  height: 420px;
+  background: rgba(255, 167, 0, 0.55);
+}
+.app .page .culture .background_img .title {
+  position: absolute;
+  right: 100px;
+  top: 150px;
+  width: 150px;
   text-align: center;
 }
-.app .page .team ul {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+.app .page .culture .background_img .title .culture-title1 {
+  font-size: 30px;
 }
-.app .page .team ul li {
-  width: 400px;
+.app .page .culture .background_img .title .culture-title2 {
+  font-size: 14px;
+}
+.app .page .culture .text_div {
+  position: relative;
   float: left;
-  margin-bottom: 40px;
-  height: 257px;
+  text-align: left;
+  margin-left: 30px;
+  top: 50px;
+  font-size: 24px;
 }
-.app .page .team ul li img {
-  float: left;
+.app .page .culture .text_div .text_title {
+  color: #333;
 }
-.app .page .team ul li .info {
-  float: left;
-  padding-left: 12px;
-  max-width: 219px;
-}
-.app .page .team ul li h4 {
-  color: #444;
-  font-size: 21px;
-  margin: 0;
-  line-height: 40px;
-}
-.app .page .team ul li h5 {
+.app .page .culture .text_div .text {
   color: #666;
-  font-size: 16px;
-  margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 15px;
 }
-.app .page .team ul li p {
-  color: #999;
-  font-size: 16px;
-  margin: 0;
-}
-.app .page .university {
+.app .page .history {
+  margin-top: 130px;
   margin-bottom: 100px;
 }
-.app .page .university .title1 {
+.app .page .history .title1 {
   font-size: 30px;
   color: #444;
   text-align: center;
 }
-.app .page .university .title2 {
+.app .page .history .title2 {
   font-size: 14px;
   color: #999;
   text-align: center;
 }
-.app .page .university .first-msg {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  background: url(../img/a3a65c2f142510cc35c88165621578c8.jpg) center no-repeat;
-  height: 484px;
-  margin-top: 30px;
-  position: relative;
-}
-.app .page .university .first-msg .first-title {
-  color: #fff;
-  font-size: 20px;
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
-  z-index: 3;
-}
-.app .page .university .first-msg .first-date {
-  color: #fff;
-  font-size: 14px;
-  position: absolute;
-  right: 30px;
-  bottom: 20px;
-  z-index: 3;
-}
-.app .page .university .first-msg::before {
-  content: '';
-  display: block;
-  height: 40px;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0px -10px 10px -5px rgba(0, 0, 0, 0.5);
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.app .page .university ul {
-  width: 1200px;
+.app .page .history .year {
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
-.app .page .university ul li {
-  height: 200px;
-  width: 100%;
-  border-top: 1px solid #e6e6e6;
-}
-.app .page .university ul li img {
-  padding-top: 27px;
-  float: left;
-}
-.app .page .university ul li .msg-div {
-  width: 750px;
-  float: left;
-  margin-left: 50px;
-  padding-right: 50px;
-}
-.app .page .university ul li h3 {
-  font-size: 20px;
-  color: #444;
-  padding-top: 30px;
-}
-.app .page .university ul li p {
-  height: 57px;
-  font-size: 14px;
+.app .page .history .year .year_title {
+  font-size: 30px;
   color: #666;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  margin: 30px auto 20px 30px;
 }
-.app .page .university ul li .msg-date {
-  width: 150px;
-  float: left;
-  height: 100px;
-  margin-top: 50px;
-  border-left: 1px solid #e6e6e6;
-}
-.app .page .university ul li .msg-date .dd {
-  font-size: 54px;
+.app .page .history .year .content_list {
+  background: #F9F9F9;
+  border-left: 3px solid #FFA700;
+  height: 70px;
+  line-height: 70px;
   color: #666;
-  display: block;
-  text-align: center;
+  padding-left: 27px;
+  margin-bottom: 8px;
 }
-.app .page .university ul li .msg-date .yy-mm {
-  font-size: 14px;
-  color: #999;
-  display: block;
-  text-align: center;
-}
-.app .page .university ul li:first-of-type {
-  border-top: 0;
-}
-.goToTop {
-  width: 52px;
-  height: 52px;
-  position: fixed;
-  right: 100px;
-  cursor: pointer;
-  bottom: 100px;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAAOVBMVEXk5OT+/v7z8/Po6Ojh4eHg4OD////h4eHg4OBMaXHx8fHq6urp6eny8vLj4+P19fXw8PD9/f3r6+t/C577AAAACnRSTlMc////7f//5qYAWIlHzwAAAIRJREFUSMft1ksOgCAMBNBBwYKCv/sfVtwin7SJu86S5AUoIRkEeHKMkEcArGPGAt6x40F8RHCCKFKkiInuxEezWSYuysYsKw+9+2xNhc7Zmgq9+7QUujNoKPTnVlcYzLqqMHqfmvqgq3zTrOIIpbNciceun1CRov+QqFCJqpuoJErq6AP9MjUojxIJUgAAAABJRU5ErkJggg==) center no-repeat;
-  z-index: 99;
-  display: none;
+@media screen and (max-height: 800px) {
+  .app .page .summary .background_img .title .summary-title1 {
+    font-size: 24px;
+  }
+  .app .page .summary .background_img .title .summary-title2 {
+    font-size: 12px;
+  }
+  .app .page .summary .text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .app .page .culture .background_img .title .culture-title1 {
+    font-size: 24px;
+  }
+  .app .page .culture .background_img .title .culture-title2 {
+    font-size: 12px;
+  }
+  .app .page .culture .background_img .title_background {
+    height: 390px;
+  }
+  .app .page .culture .text_div {
+    font-size: 18px;
+    margin-top: 15px;
+  }
 }
 
-/*# sourceMappingURL=team.de5b27503b3f49ab2a15.css.map*/
+/*# sourceMappingURL=about.55728f180a4ca52d07b9.css.map*/
